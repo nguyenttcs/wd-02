@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+	scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color:rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+nav ul li:hover a{
+	color: indianred;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	color: white;
+}
+
+section h1 {
+	font-size: 50px;
+}
+
+section h1 span {
+	font-weight: 200;
+}
+
+section a svg {
+	width: 50px;
+	height: 50px;
+	margin-top: 50px;
+	color: white;
+	animation: di-chuyen 1s linear infinite alternate;
+}
+
+@keyframes di-chuyen {
+	from {
+		margin-top: 40px;
+	}
+
+	to {
+		margin-top: 60px;
+	}
+}
+
+section p {
+	padding: 20px 0;
+}
+
+#trang-chu {
+	background-image: url('../img/section3.jpeg');
+}
+
+#gioi-thieu {
+  background-image: url('../img/section.jpeg');
+}
+
+#san-pham {
+  background-image: url('../img/section2.jpeg');
+}
+
+#lien-he {
+  background-image: url('../img/home1.jpeg');
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	section h1 {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	nav ul li {
+		padding: 0 10px;
+		font-size: 12px;
+	}
+
+	section h1 {
+		font-size: 20px;
+	}
+}
